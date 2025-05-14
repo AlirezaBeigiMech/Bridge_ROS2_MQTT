@@ -48,13 +48,13 @@ git clone https://github.com/AlirezaBeigiMech/ros2_mqtt_bridge.git
 cd Bridge_ROS2_MQTT
 ```
 
-# Build using colcon
+### Build using colcon
 
 ```bash
 colcon build --packages-select ros2_mqtt_bridge --cmake-clean-cache
 ```
 
-# Source the ROS2 workspace
+### Source the ROS2 workspace
 ```bash
 source install/setup.bash
 ```
