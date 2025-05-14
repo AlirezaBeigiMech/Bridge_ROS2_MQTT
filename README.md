@@ -26,21 +26,18 @@ The bridge subscribes to a ROS2 topic and publishes incoming messages to an MQTT
 To connect your ROS2 MQTT Bridge to HiveMQ Cloud, follow these simple steps:
 ### 1️⃣ Create a HiveMQ Cloud Account
 
-    Go to: https://www.hivemq.com/mqtt-cloud-broker/
-
-    Sign up for a Free HiveMQ Cloud account.
+Go to: https://www.hivemq.com/mqtt-cloud-broker/
+Sign up for a Free HiveMQ Cloud account.
 
 ### 2️⃣ Set Up Your MQTT Broker
 
-    After logging in, create a new cluster.
-
-    Note down these details:
-
-        Server URL (e.g., your-cluster-uuid.s2.eu.hivemq.cloud)
-
-        Port: 8883 (SSL/TLS)
-
-        Username & Password (auto-generated or set manually).
+After logging in, create a new cluster.
+Note down these details:
+```bash
+Server URL (e.g., your-cluster-uuid.s2.eu.hivemq.cloud)
+Port: 8883 (SSL/TLS)
+Username & Password (auto-generated or set manually).
+```
 
 
 ## 🛠️ How to Build
