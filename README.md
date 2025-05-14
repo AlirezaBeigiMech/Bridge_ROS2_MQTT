@@ -25,14 +25,14 @@ The bridge subscribes to a ROS2 topic and publishes incoming messages to an MQTT
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/ros2_mqtt_bridge.git
-cd ros2_mqtt_bridge
+git clone https://github.com/AlirezaBeigiMech/ros2_mqtt_bridge.git
+cd Bridge_ROS2_MQTT
 ```
 
 # Build using colcon
 
 ```bash
-colcon build --packages-select mqtt_ros_bridge
+colcon build --packages-select ros2_mqtt_bridge --cmake-clean-cache
 ```
 
 # Source the ROS2 workspace
@@ -44,12 +44,12 @@ source install/setup.bash
 
 In a separate terminal, start a ROS2 publisher:
 ```bash
-ros2 topic pub /chatter std_msgs/msg/String "data: 'Hello MQTT World!'"
+ros2 run ros2_mqtt_bridge talker "hello from CLI"
 ```
 
 Run the ROS2-MQTT bridge:
 ```bash
-ros2 run mqtt_ros_bridge mqtt_ros_bridge_node
+ros2 run ros2_mqtt_bridge listener
 ```
 
 ## 📝 Configuration
